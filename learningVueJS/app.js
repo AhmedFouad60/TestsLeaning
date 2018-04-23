@@ -17,6 +17,8 @@ new vue({
         dis:function () {
             if(this.name===''||this.age===''||this.job===''){
                 return true;
+            }else if ((this.name.length < 5|| this.age.length < 2||this.job.length <5)){
+                return true;
             }else {
                 return false;
             }
