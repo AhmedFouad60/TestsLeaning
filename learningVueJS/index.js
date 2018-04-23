@@ -9,13 +9,18 @@ new vue({
        age:'',
        job:'',
        gender:'male',
-       persons:[
-           {name:"ahmed",age:"23",job:"web developer|androidDev"},
-           {name:"sayed",age:"23",job:"web developer|androidDev"},
-           {name:"zico",age:"23",job:"web developer|androidDev"},
-           {name:"frank castle",age:"23",job:"web developer|androidDev"},
-       ]
-   },
+       persons:[],
+       // dis:true
+
+   },computed:{
+        dis:function () {
+            if(this.name===''||this.age===''||this.job===''){
+                return true;
+            }else {
+                return false;
+            }
+        }
+    },
     methods:{
        addUser:function () {
          var newPerson={
