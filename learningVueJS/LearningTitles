@@ -1,0 +1,437 @@
+1-install vue js 
+2-render message in the html page
+
+====Code=============
+
+
+{index.js}
+**********
+var vue=require('vue');
+
+new vue({
+   el:"#test",
+   data:{
+       msg:"ADD YOUR TEXT",
+       
+   }
+});
+
+{index.html}
+************
+div class="container" id="test">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1>{{msg}}</h1>
+           
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+===Code============
+
+
+
+3-model 
+
+
+====Code==================
+
+
+{index.js}
+**********
+var vue=require('vue');
+
+new vue({
+   el:"#test",
+   data:{
+       msg:"ADD YOUR TEXT",
+       myname:'YOU NANE Displaying HERE'
+   }
+});
+
+{index.html}
+************
+div class="container" id="test">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1>{{msg}}</h1>
+            <input type="text" placeholder="Add Test " name="name" class="form-control" v-model="myname">
+            <p style="padding-top: 50px;">{{myname}}</p>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+===Code================
+
+4-for loop vueJS
+
+
+=====Code =======
+
+{index.js}
+**********
+
+var vue=require('vue');
+
+new vue({
+   el:"#test",
+   data:{
+       msg:"ADD YOUR TEXT",
+       myname:'YOU NANE Displaying HERE',
+       persons:[
+           {name:"ahmed",age:"23",job:"web developer|androidDev"},
+           {name:"sayed",age:"23",job:"web developer|androidDev"},
+           {name:"zico",age:"23",job:"web developer|androidDev"},
+           {name:"frank castle",age:"23",job:"web developer|androidDev"},
+       ]
+   }
+});
+
+
+{index.html}
+************
+
+<h2 class="text-uppercase">users .</h2>
+            <ul>
+                <li v-for="person in persons">{{person.name}}</li>
+            </ul>
+
+=====Code========
+
+
+5-events push to array
+
+=======Code=================
+
+{index.js}
+**********
+
+var vue=require('vue');
+
+new vue({
+   el:"#test",
+   data:{
+       msg:"ADD YOUR TEXT",
+       myname:'YOU NANE Displaying HERE',
+       name:'',
+       age:'',
+       job:'',
+       persons:[
+           {name:"ahmed",age:"23",job:"web developer|androidDev"},
+           {name:"sayed",age:"23",job:"web developer|androidDev"},
+           {name:"zico",age:"23",job:"web developer|androidDev"},
+           {name:"frank castle",age:"23",job:"web developer|androidDev"},
+       ]
+   },
+    methods:{
+       addUser:function () {
+         var newPerson={
+             name:this.name,
+             age:this.age,
+             job:this.job
+         };
+         this.persons.push(newPerson);
+          this.name="";
+          this.age="";
+          this.job="";
+       }
+       
+    }
+});
+
+
+{index.html}
+************
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+          integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <style>
+        body{
+            padding-top: 50px;
+            background: #eaf5f5;
+        }
+    </style>
+</head>
+<body>
+<div class="container" id="test">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1>{{msg}}</h1>
+            <h2 class="text-uppercase">users .</h2>
+          <table class="table table-hover ">
+              <tr>
+                  <td>#</td>
+                  <td>Name</td>
+                  <td>Age</td>
+                  <td>Job</td>
+              </tr>
+
+              <tr v-for="(person,index) in persons">
+                  <td>
+                      {{ index+1}}
+                  </td>
+                  <td>{{person.name}}</td>
+                  <td>{{person.age}}</td>
+                  <td>{{person.job}}</td>
+
+              </tr>
+
+
+
+          </table>
+
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-lg-4">
+            <input class="form-control" type="text" placeholder="name" v-model="name">
+        </div>
+
+        <div class="col-lg-4">
+            <input class="form-control" type="text" placeholder="age" v-model="age">
+        </div>
+        <div class="col-lg-4">
+            <input class="form-control" type="text" placeholder="job" v-model="job">
+        </div>
+    </div>
+
+    <div class="row" style="padding-top: 20px;">
+        <div class="col-lg-4">
+            <button class="btn btn-danger" @click="addUser()">Add user</button>
+        </div>
+
+
+    </div>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+<script src="app.js"></script>
+</body>
+</html>
+
+
+=======Code=================
+
+
+6-Remove from Array
+
+
+=======Code=================
+
+{index.js}
+**********
+var vue=require('vue');
+
+new vue({
+   el:"#test",
+   data:{
+       msg:"ADD YOUR TEXT",
+       myname:'YOU NANE Displaying HERE',
+       name:'',
+       age:'',
+       job:'',
+       persons:[
+           {name:"ahmed",age:"23",job:"web developer|androidDev"},
+           {name:"sayed",age:"23",job:"web developer|androidDev"},
+           {name:"zico",age:"23",job:"web developer|androidDev"},
+           {name:"frank castle",age:"23",job:"web developer|androidDev"},
+       ]
+   },
+    methods:{
+       addUser:function () {
+         var newPerson={
+             name:this.name,
+             age:this.age,
+             job:this.job
+         };
+         this.persons.push(newPerson);
+          this.name="";
+          this.age="";
+          this.job="";
+       },
+        removeUser:function (index) {
+            this.persons.splice(index,1);
+        }
+       
+    }
+});
+
+
+
+
+
+{index.html}
+************
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+          integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <style>
+        body{
+            padding-top: 50px;
+            background: #eaf5f5;
+        }
+    </style>
+</head>
+<body>
+<div class="container" id="test">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1>{{msg}}</h1>
+            <h2 class="text-uppercase">users .</h2>
+          <table class="table table-hover ">
+              <tr>
+                  <td>#</td>
+                  <td>Name</td>
+                  <td>Age</td>
+                  <td>Job</td>
+              </tr>
+
+              <tr v-for="(person,index) in persons">
+                  <td>
+                      {{ index+1}}
+                  </td>
+                  <td>{{person.name}}</td>
+                  <td>{{person.age}}</td>
+                  <td>{{person.job}}</td>
+                  <td>
+                      <button @click="removeUser(index)" class="btn-danger">X</button>
+
+                  </td>
+
+              </tr>
+
+
+
+          </table>
+
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-lg-4">
+            <input class="form-control" type="text" placeholder="name" v-model="name">
+        </div>
+
+        <div class="col-lg-4">
+            <input class="form-control" type="text" placeholder="age" v-model="age">
+        </div>
+        <div class="col-lg-4">
+            <input class="form-control" type="text" placeholder="job" v-model="job">
+        </div>
+    </div>
+
+    <div class="row" style="padding-top: 20px;">
+        <div class="col-lg-4">
+            <button class="btn btn-success" @click="addUser()">Add user</button>
+        </div>
+
+
+    </div>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+<script src="app.js"></script>
+</body>
+</html>
+
+
+
+
+
+=======Code=================
+
+
+
+
+7-if else
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
