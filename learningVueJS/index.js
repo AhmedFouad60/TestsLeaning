@@ -1,7 +1,17 @@
 var vue=require('vue');
+var showUsers=require('./show_users.vue');
+var addUser=require('./add_user.vue');
+
+
+
+
 
 new vue({
    el:"#test",
+    components:{
+     show_users:showUsers,
+     add_user:addUser
+    },
    data:{
        msg:"ADD YOUR TEXT",
        myname:'YOU NANE Displaying HERE',

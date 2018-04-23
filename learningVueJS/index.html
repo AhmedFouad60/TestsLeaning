@@ -18,79 +18,11 @@
 <body>
 
 <div class="container" id="test">
-    <div class="row">
-        <div class="col-lg-12">
-            <h1>{{msg}}</h1>
-            <h2 class="text-uppercase">users .</h2>
-          <table class="table table-hover ">
-              <tr>
-                  <td>#</td>
-                  <td>Name</td>
-                  <td>Age</td>
-                  <td>Job</td>
-                  <td>Gender</td>
-                  <td>Remove</td>
 
-              </tr>
-
-              <tr v-for="(person,index) in persons">
-                  <td>
-                      {{ index+1}}
-                  </td>
-                  <td>{{person.name}}</td>
-                  <td>{{person.age}}</td>
-                  <td>{{person.job}}</td>
-                  <td>
-                      <span  v-if="person.gender=='male'">
-                          <span class="badge badge-primary">{{person.gender}}</span>
-                      </span>
-                      <span  v-else>
-                          <span class="badge badge-danger">{{person.gender}}</span>
-                      </span>
-
-                  </td>
-                  <td>
-                      <button @click="removeUser(index)" class="btn-danger">X</button>
-
-                  </td>
-
-              </tr>
-
-
-
-          </table>
-
-        </div>
-    </div>
-
-
-    <div class="row">
-        <div class="col-lg-3">
-            <input class="form-control" type="text" placeholder="name" v-model="name">
-        </div>
-
-        <div class="col-lg-3">
-            <input class="form-control" type="text" placeholder="age" v-model="age">
-        </div>
-        <div class="col-lg-3">
-            <input class="form-control" type="text" placeholder="job" v-model="job">
-        </div>
-        <div class="col-lg-3">
-            <select id="" name="" v-model="gender" class="form-control">
-                <option value="male" selected="selected">male</option>
-                <option value="female" >female</option>
-            </select>
-        </div>
-    </div>
-
-    <div class="row" style="padding-top: 20px;">
-        <div class="col-lg-4">
-            <button class="btn btn-success" v-bind:disabled="dis" @click="addUser()">Add user</button>
-        </div>
-
-
-    </div>
-
+<!--Show user in table-->
+<show_users></show_users>
+<!--Add user-->
+<add_user></add_user>
 
 
 
