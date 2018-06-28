@@ -19,7 +19,7 @@ new vue({
        age:'',
        job:'',
        gender:'male',
-       persons:[],
+       persons:[{name:"foush",age:23,gender:'male',job:'web developer'}],
        // dis:true
 
    },computed:{

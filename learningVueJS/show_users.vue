@@ -50,7 +50,13 @@
 
 <script>
     export default {
+        props:['persons','name','age'],                     //data that will be sent from the parent to this child
+        data(){
+            return{
 
+            }
+        }
+,
         name: "show_users"
     }
 </script>

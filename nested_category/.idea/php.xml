@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PhpIncludePathManager">
+    <include_path>
+      <path value="$PROJECT_DIR$/laravel5-nestedset-demo/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/laravel5-nestedset-demo/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/laravel5-nestedset-demo/vendor/symfony/class-loader" />
+      <path value="$PROJECT_DIR$/laravel5-nestedset-demo/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/laravel5-nestedset-demo/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/laravel5-nestedset-demo/vendor/barryvdh/laravel-ide-helper" />
+      <path value="$PROJECT_DIR$/laravel5-nestedset-demo/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/laravel5-nestedset-demo/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/laravel5-nestedset-demo/vendor/ircmaxell/password-compat" />
+      <path value="$PROJECT_DIR$/laravel5-nestedset-demo/vendor/mtdowling/cron-expression" />
+      <path value="$PROJECT_DIR$/laravel5-nestedset-demo/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/laravel5-nestedset-demo/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/laravel5-nestedset-demo/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/laravel5-nestedset-demo/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/laravel5-nestedset-demo/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/laravel5-nestedset-demo/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/laravel5-nestedset-demo/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/laravel5-nestedset-demo/vendor/jeremeamia/SuperClosure" />
+      <path value="$PROJECT_DIR$/laravel5-nestedset-demo/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/laravel5-nestedset-demo/vendor/danielstjules/stringy" />
+      <path value="$PROJECT_DIR$/laravel5-nestedset-demo/vendor/jakub-onderka/php-console-highlighter" />
+      <path value="$PROJECT_DIR$/laravel5-nestedset-demo/vendor/jakub-onderka/php-console-color" />
+      <path value="$PROJECT_DIR$/laravel5-nestedset-demo/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/laravel5-nestedset-demo/vendor/classpreloader/classpreloader" />
+      <path value="$PROJECT_DIR$/laravel5-nestedset-demo/vendor/laravelcollective/html" />
+      <path value="$PROJECT_DIR$/laravel5-nestedset-demo/vendor/composer" />
+      <path value="$PROJECT_DIR$/laravel5-nestedset-demo/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/laravel5-nestedset-demo/vendor/psy/psysh" />
+      <path value="$PROJECT_DIR$/laravel5-nestedset-demo/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/laravel5-nestedset-demo/vendor/kalnoy/nestedset" />
+      <path value="$PROJECT_DIR$/laravel5-nestedset-demo/vendor/league/flysystem" />
+      <path value="$PROJECT_DIR$/laravel5-nestedset-demo/vendor/nesbot/carbon" />
+      <path value="$PROJECT_DIR$/laravel5-nestedset-demo/vendor/vlucas/phpdotenv" />
+      <path value="$PROJECT_DIR$/laravel5-nestedset-demo/vendor/dnoegel/php-xdg-base-dir" />
+      <path value="$PROJECT_DIR$/laravel5-nestedset-demo/vendor/laravel/framework" />
+      <path value="$PROJECT_DIR$/laravel5-nestedset-demo/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/laravel5-nestedset-demo/vendor/phpspec/phpspec" />
+      <path value="$PROJECT_DIR$/laravel5-nestedset-demo/vendor/phpspec/prophecy" />
+      <path value="$PROJECT_DIR$/laravel5-nestedset-demo/vendor/phpspec/php-diff" />
+      <path value="$PROJECT_DIR$/laravel5-nestedset-demo/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/laravel5-nestedset-demo/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/laravel5-nestedset-demo/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/laravel5-nestedset-demo/vendor/phpunit/phpunit-mock-objects" />
+      <path value="$PROJECT_DIR$/laravel5-nestedset-demo/vendor/phpunit/php-token-stream" />
+      <path value="$PROJECT_DIR$/laravel5-nestedset-demo/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/laravel5-nestedset-demo/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/laravel5-nestedset-demo/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/laravel5-nestedset-demo/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/laravel5-nestedset-demo/vendor/symfony/debug" />
+      <path value="$PROJECT_DIR$/laravel5-nestedset-demo/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/laravel5-nestedset-demo/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/laravel5-nestedset-demo/vendor/symfony/filesystem" />
+      <path value="$PROJECT_DIR$/laravel5-nestedset-demo/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/laravel5-nestedset-demo/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/laravel5-nestedset-demo/vendor/symfony/security-core" />
+    </include_path>
+  </component>
+  <component name="PhpUnit">
+    <phpunit_settings>
+      <PhpUnitSettings load_method="CUSTOM_LOADER" custom_loader_path="$PROJECT_DIR$/laravel5-nestedset-demo/vendor/autoload.php" />
+    </phpunit_settings>
+  </component>
+</project>

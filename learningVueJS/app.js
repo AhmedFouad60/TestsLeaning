@@ -48,7 +48,7 @@ new vue({
        age:'',
        job:'',
        gender:'male',
-       persons:[],
+       persons:[{name:"foush",age:23,gender:'male',job:'web developer'}],
        // dis:true
 
    },computed:{
@@ -8897,12 +8897,15 @@ module.exports = Vue$3;
 }).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
 },{"_process":6}],5:[function(require,module,exports){
 ;(function(){
-"use strict";
+'use strict';
 
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
 exports.default = {
+    props: ['persons', 'name', 'age'], data: function data() {
+        return {};
+    },
 
     name: "show_users"
 };
