@@ -9,6 +9,8 @@ require('./bootstrap');
 
 window.Vue = require('vue');
 
+// var CHATBOX=require('./components/chatbox/chatbox');
+
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -16,12 +18,17 @@ window.Vue = require('vue');
  */
 
 Vue.component('example-component', require('./components/ExampleComponent.vue'));
+Vue.component('chat_box',require('./components/chatbox/chatbox.vue'));
+// Vue.component('ALL_ROOMS',require('./components/rooms/add_rooms'));
 
 const app = new Vue({
-    el: '#app',
+    el: '#app'
+   ,
     data:function () {
         return{
             message:'hello foush',
         }
-    }
+    },
+
+
 });

@@ -12,9 +12,13 @@ let mix = require('laravel-mix');
  */
 
 mix.js('resources/assets/js/app.js', 'public/js')
-   .sass('resources/assets/sass/app.scss', 'public/css');
+   // .sass('resources/assets/sass/app.scss', 'public/css');
 mix.styles([
+    'resources/assets/css/fontawesome-all.min.css',
+
     'resources/assets/css/chatBox.css',
     'resources/assets/css/chatDashboard.css',
     'resources/assets/css/app.css'
+
+
 ], 'public/css/All.css');

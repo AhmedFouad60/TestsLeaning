@@ -73,10 +73,10 @@
 
             </li>
             <li>
-                <a href="#"><i class="fa fa-envelope-o"></i> All Rooms</a>
+                <a href="#"><i class="fa fa-plus"></i> All Rooms</a>
             </li>
             <li>
-                <a href="#"><i class="fa fa-bookmark-o"></i> My Room</a>
+                <a href="#"><i class="fa fa-plus"></i> My Room</a>
             </li>
 
         </ul>
@@ -96,7 +96,12 @@
         <div class="inbox-body index-body-active">
             {{--<div class="mail-option">--}}
             {{--</div>--}}
-            @include('includes.chatBox')
+            {{--@include('includes.chatBox')--}}
+
+            @{{ message }}
+            <ALL_ROOMS></ALL_ROOMS>
+            <chat_box></chat_box>
+
         </div>
     </aside>
 </div>

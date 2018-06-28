@@ -1,5 +1,5 @@
 <div class="chat_window">
-    @{{message}}
+
     <div class="top_menu">
         <div class="buttons">
             <div class="button close">
